@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+    color: black;
+}
+
+.total-2 {
+    display: flex;
+}
+
+.text-container {
+    display: block;
+    padding: 50px 60px 80px 60px;
+    width: 80vw;
+}
+
+section {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* background-color: yellowgreen; */
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    /* background-color: blue; */
+}
+
+h3~p,
+h3~ul {
+    margin-left: 20px;
+    /* background-color: bisque; */
+}
+
+section p {
+    font-weight: 400;
+    text-align: justify;
+    /* background-color: aquamarine; */
+}
+
+section ul {
+    padding: 20px;
+    font-weight: 400;
+    text-align: justify;
+    /* background-color: aqua; */
+}
+
+
+
+aside {
+    width: 20vw;
+    height: 100vh;
+    padding: 100px 10px;
+    right: 0;
+    font-style: italic;
+    background-color: white;
+    position: sticky;
+    top: 80px;
+    box-shadow: -10px 0px 8px #EEEEEE;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+aside ul ul {
+    padding-left: 15px;
+}
+
+aside li.active {
+    font-weight: 600;
+}
+
+.table {
+    display: none;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+.table-after {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: border-bottom-left-radius .5s, border-bottom-right-radius .5s;
+    border-bottom: 1px solid gray;
+
+}
+
+
+.active {
+    font-weight: 600;
+}
+
+
+code {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+
+
+
+/****** For Mobile ******/
+@media screen and (max-width: 420px) {
+
+    .total {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .text-container {
+        padding: 10px 16px 16px 16px;
+        width: 100%;
+        order: 2;
+    }
+
+    .div2 {
+        order: 1;
+    }
+
+    aside {
+        display: none;
+        height: auto;
+        padding: 20px;
+        width: 100%;
+        background-color: lightgray;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        box-shadow: none;
+    }
+
+    .table {
+        display: block;
+    }
+
+
+}
+
+
+
+
+/****** For Tab ******/
+
+
+@media screen and (min-width: 420px) and (max-width: 1200px) {
+
+
+    .total {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .text-container {
+        padding: 10px 16px 16px 16px;
+        width: 100%;
+        order: 2;
+    }
+
+    .div2 {
+        order: 1;
+    }
+
+    aside {
+        display: none;
+        height: auto;
+        padding: 20px;
+        width: 100%;
+        background-color: lightgray;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        box-shadow: none;
+    }
+
+    .table {
+        display: block;
+    }
+
+}

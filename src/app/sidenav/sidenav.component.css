@@ -1,0 +1,178 @@
+.sidenav {
+	position: sticky;
+	top: 80px;
+	/* width: 280px; */
+	width: 20vw;
+	height: 100vh;
+	overflow: auto;
+	left: 0;
+	background: white;
+	box-shadow: 10px 0px 8px #EEEEEE;
+}
+
+.sidenav ul {
+	height: 100%;
+	width: 100%;
+	list-style: none;
+}
+
+.sidenav ul li {
+	line-height: 50px;
+	position: relative;
+	cursor: pointer;
+}
+
+.sidenav ul li a {
+	color: black;
+	text-decoration: none;
+	font-size: 16px;
+	padding-left: 30px;
+	font-weight: 500;
+	width: 100%;
+}
+
+.sidenav ul ul li a {
+	font-size: 14px;
+	padding-left: 40px;
+}
+
+.sidenav ul li:hover {
+	/* background-color: #583e3e; */
+	/* color: #10A19D; */
+	/* background-color: whitesmoke; */
+	box-shadow: 10px 0px 8px #EEEEEE;
+}
+
+
+.sidenav ul li a i {
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	font: 25px;
+
+}
+
+.subtopics {
+	overflow: hidden;
+	display: none;
+}
+
+
+a.sidenav-icon {
+	text-decoration: none;
+	/* cursor: pointer; */
+}
+
+.sidenav-icon {
+	position: fixed;
+	top: 15px;
+	right: 30px;
+	display: none;
+	z-index: 1;
+}
+
+#hamburger {
+	font-size: 30px;
+}
+
+
+/* .sidenav.active{
+	background-color: aqua;
+} */
+
+.project-list {
+	display: none;
+}
+
+
+
+
+
+
+
+/****** For Mobile ******/
+
+
+@media screen and (max-width: 420px) {
+
+	.sidenav {
+		width: 100%;
+		display: none;
+		top: 70px;
+		background-color: whitesmoke;
+
+	}
+
+
+	.sidenav-icon {
+		display: block;
+	}
+
+
+
+	.project-list {
+		display: block;
+	}
+
+
+	.sidenav ul li {
+		text-align: left;
+	}
+
+
+	.project-list span {
+
+		margin: 10px;
+	}
+
+
+
+}
+
+
+
+
+/****** For Tab ******/
+
+
+@media screen and (min-width: 420px) and (max-width: 1200px) {
+
+
+	.sidenav {
+		width: 100%;
+		display: none;
+		top: 70px;
+		background-color: whitesmoke;
+
+	}
+
+
+	.sidenav-icon {
+		display: block;
+	}
+
+	.project-list {
+		display: block;
+	}
+
+	.sidenav ul li {
+		line-height: 70px;
+		font-size: 20px;
+		text-align: center;
+	}
+
+
+
+	.project-list span {
+
+		margin: 10px;
+	}
+
+
+
+	.project-list {
+		text-align: center;
+	}
+
+
+}
